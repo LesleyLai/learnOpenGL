@@ -8,5 +8,6 @@ if(NOT CLANG_TIDY_EXE)
     message(WARNING "clang-tidy not found.")
 else()
     message(STATUS "clang-tidy found: ${CLANG_TIDY_EXE}")
-    set(DO_CLANG_TIDY "${CLANG_TIDY_EXE}" "-checks=*,-clang-analyzer-alpha.*,-google*,-readability-braces-around-statements,-readability-implicit-bool-cast,-llvm-include-order,-cppcoreguidelines-pro-type-reinterpret-cast")
+    set(DO_CLANG_TIDY "${CLANG_TIDY_EXE}"
+        "-checks=*,-clang-analyzer-alpha.*,-google*,-readability-braces-around-statements,-readability-implicit-bool-cast,-llvm-include-order,-cppcoreguidelines-pro-type-reinterpret-cast,-cppcoreguidelines-pro-bounds-array-to-pointer-decay,-readability-named-parameter")
 endif()

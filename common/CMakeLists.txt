@@ -1,6 +1,11 @@
 add_library(common
-    window.hpp
-    window.cpp)
+    application.hpp
+    application.cpp
+    shader.hpp
+    shader.cpp
+    shader_program.hpp
+    shader_program.cpp
+    )
 
 target_link_libraries(common glad glfw)
 
