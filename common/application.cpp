@@ -53,8 +53,7 @@ Application::Application(int width, int height) {
 Application::~Application() {
     if (window_) glfwDestroyWindow(window_);
 
-    // TODO: This cause the program to crash
-    //glfwTerminate();
+    glfwTerminate();
 }
 
 int Application::run()
