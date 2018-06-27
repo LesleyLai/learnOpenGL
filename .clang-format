@@ -1,0 +1,8 @@
+﻿---
+BasedOnStyle: LLVM
+BreakBeforeBraces: Stroustrup
+DerivePointerAlignment: 'false'
+PointerAlignment: Left
+SortIncludes: 'false'
+
+...

@@ -29,12 +29,9 @@ set_target_properties(
     COMPILE_FLAGS "${WARNING_FLAGS}"
     )
 
-include("cmake/clangTidy.cmake")
+include("cmake/compiler.cmake")
+include("cmake/clangformat.cmake")
+include("cmake/clang-tidy.cmake")
+include("cmake/cppcheck.cmake")
 
-if(CLANG_TIDY_EXE)
-    set_target_properties(
-        common learnOpenGL
-        PROPERTIES
-        CXX_CLANG_TIDY "${DO_CLANG_TIDY}"
-        )
-endif()
+add_clangformat(learnOpenGL)
