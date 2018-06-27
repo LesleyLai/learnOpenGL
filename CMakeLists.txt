@@ -16,6 +16,10 @@ add_subdirectory(third-party EXCLUDE_FROM_ALL)
 hunter_add_package(glfw)
 find_package(glfw3 CONFIG REQUIRED)
 
+## glm
+hunter_add_package(glm)
+find_package(glm REQUIRED)
+
 set (CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_STANDARD_REQUIRED ON)
 

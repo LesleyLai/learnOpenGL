@@ -7,7 +7,7 @@ add_library(common
     shader_program.cpp
     )
 
-target_link_libraries(common glad glfw)
+target_link_libraries(common glad glfw glm)
 
 set_target_properties(
     common PROPERTIES
